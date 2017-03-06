@@ -39,7 +39,6 @@ all: $(NAME)
 	gcc $(FLAGS) -c -o $@ $<
 
 $(NAME) :
-		gcc -c $(FLAGS) $(SRC) $(INCLUDES)
 		ar rc $(NAME) $(OBJ)
 
 clean:
